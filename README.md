@@ -9,10 +9,15 @@ To activate:
 2)In the termianl type
 
 *sudo modprobe tcp_qtcp*
+
 *sudo sysctl -w net.ipv4.tcp_congestion_control=qtcp*
+
 *sudo sysctl -w net.ipv4.tcp_ecn_fallback=0*
+
 *sudo sysctl -w net.ipv4.tcp_ecn=1*
+
 3)To verify whether qtcp has been activated type
+
 *cat /proc/sys/net/ipv4/tcp_congestion_control*
 
 4)Run the source code provided in **tutorial** folder.
